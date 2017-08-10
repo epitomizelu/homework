@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .nav{
+            width: 40%;
+            background-color:#f1f1f1;
+            border-radius: 3px;
+            margin: 0 auto;
+            text-align: center;
+            box-shadow: 2px 2px 5px rgb(203,203,203);
+        }
+
+        .nav::after{
+            display: block;
+            content: "";
+            clear: both;
+        }
+
+        .menu{
+            list-style: none;
+            float: left;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .menu  li{
+            float: left;
+            padding: 15px;
+
+        }
+        .menu li a{
+            text-decoration: none;
+            color: black;
+
+        }
+
+        .menu li:hover{
+             background-color: rgb(204,204,204);
+             cursor: pointer;
+        }
+
+        .menu li:hover .children ul{
+            display: block;
+        }
+
+        .menu li:last-child{
+            position: relative;
+        }
+
+
+        .menu .children ul{
+             list-style: none;
+             position: absolute;
+             padding: 0px;
+             margin: 0px;
+             left:0px;
+             top:51px;
+             display: none;
+             box-shadow: 3px 3px 8px rgb(203,203,203);
+        }
+
+        .menu .children ul li{
+            float: none;
+            width: 200px;
+            text-align: left;
+            padding: 5px 20px 5px 15px;
+
+        }
+    </style>
+</head>
+<body>
+   <div class="nav">
+       <ul class="menu">
+           <li>首页</li>
+           <li>作品</li>
+           <li>
+               <a href="#">更多</a>
+               <div class="children">
+                   <ul>
+                       <li><a href="#">GitHub</a></li>
+                       <li><a href=#">博客</a></li>
+                       <li><a href="#">知乎</a></li>
+                   </ul>
+               </div>
+           </li>
+       </ul>
+   </div>
+</body>
+</html>
