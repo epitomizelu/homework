@@ -63,5 +63,10 @@
     我的思路：我是想实现文字在div中垂直居中，所以我给包裹文字的span设置了display: inline-block; vertical-align: middle;这两个样式，但没成功（如效果二所示），
     在给img元素的样式也增加了display: inline-block; vertical-align: middle;就实现了效果一
 </div>
+<hr/>
+<div class="answer">
+   <p>我的理解：</p>
+    <p>图片默认与行的基线对齐，文字也是基于基线绘制，所以不在图片设置vertical-align：middle，那么图片底部始终与文字底部对齐，而我们要实现的是图片中线与文字中线对齐，所以对图片和文字都要设置vertical-align:middle</p>
+</div>
 </body>
 </html>
