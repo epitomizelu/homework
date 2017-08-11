@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        @font-face {
+            font-family: 'iconfont';  /* project id 381423 */
+            src: url('//at.alicdn.com/t/font_381423_hryjlkc2hophw7b9.eot');
+            src: url('//at.alicdn.com/t/font_381423_hryjlkc2hophw7b9.eot?#iefix') format('embedded-opentype'),
+            url('//at.alicdn.com/t/font_381423_hryjlkc2hophw7b9.woff') format('woff'),
+            url('//at.alicdn.com/t/font_381423_hryjlkc2hophw7b9.ttf') format('truetype'),
+            url('//at.alicdn.com/t/font_381423_hryjlkc2hophw7b9.svg#iconfont') format('svg');
+        }
+
+
+        body{
+            background-color: black;
+        }
+        .container{
+            margin: auto;
+            padding: 10px;
+            width: 33%;
+            height: 33%;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left:0;
+            right: 0;
+        }
+        .radius{
+            width: 40px;
+            border-radius: 50%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .header span{
+           margin-left: 10px;
+
+        }
+        .header .author{
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .header div{
+
+        }
+        .header .time{
+           color: rgba(0,0,0,0.4);
+        }
+        .main{
+            width: 100%;
+            position: relative;
+        }
+        .main img{
+            width: 40%;
+            float: right;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            right: 0;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        .main .left{
+            width: calc(60% - 10px);
+            height: 200px;
+
+        }
+
+        .main .left span{
+            display: block;
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .footer{
+            margin-top: 10px;
+            color: gray;
+            font-size: 10px;
+        }
+
+        .footer>span{
+            margin-right: 20px;
+        }
+        .album{
+            border: 1px solid #E96042;
+            color:#E96042 ;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .icon{
+            margin-right: 5px;
+            font-family: iconfont;
+        }
+
+
+        .summarize{
+            background-color: #72B890;
+            text-align: center;
+        }
+
+        .summarize ol{
+            display: inline-block;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+     <img class="radius" src="http://cdn2.jianshu.io/assets/default_avatar/2-9636b13945b9ccf345bc98d0d81074eb.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/120/h/120" alt=""/>
+      <span class="author">
+          <span>乐之读</span>
+          <span  class="time">昨天 22:48</span>
+      </span>
+
+    </div>
+    <div class="main">
+        <img src="http://upload-images.jianshu.io/upload_images/569985-bca54e45ba814758?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+             alt=""/>
+        <div class="left">
+           <h4>年轻人，只有读书才能逆袭？趁着年轻多读点书吧</h4>
+            <span>
+                今天的故事,来自 9 年前经历了汶川大地震后幸存下来的人。 昨晚,九寨沟今天的故事,来自 9 年前经历了汶川大地震后幸存下来的人。 昨晚,九寨沟今天的故事,来自 9 年前经历了汶川大地震后幸存下来的人。 昨晚,九寨沟
+            </span>
+        </div>
+    </div>
+    <div class="footer">
+        <span class="album">谈写作</span>
+        <span><span class="icon">&#xe7ce;</span>1675</span>
+        <span><span class="icon">&#xe6a7;</span>59</span>
+        <span><span class="icon">&#xe758;</span>11</span>
+        <span><span class="icon">&#xe6e6;</span>2</span>
+    </div>
+
+
+</div>
+
+<div class="summarize">
+    <ol>
+        <li>绝对定位实现两栏效果</li>
+        <li>border-radius属性实现圆形图片</li>
+        <li>多行文本溢出显示省略号</li>
+    </ol>
+</div>
+</body>
+</html>
