@@ -1,0 +1,54 @@
+body,html,ul,h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+
+}
+
+ul{
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+html,body{
+    height: 100%;
+    font-size: 62.5%;
+    line-height: 1;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+section{
+    padding: 1px;
+    text-align: center;
+}
+
+section h1.head-big-title{
+    font-size: 4rem;
+    margin: 4rem 0 2rem;
+}
+
+section h3.content{
+    font-size: 1.5rem;
+    margin: 2rem 0 4rem;
+    color: rgb(163,163,119);
+}
+
+section h3.head-small-title{
+    font-size: 1.5rem;
+    margin: 2rem 0 ;
+    font-weight: bold;
+}
