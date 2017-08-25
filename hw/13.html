@@ -1,0 +1,426 @@
+header::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+
+}
+
+
+header{
+    background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503204360288&di=78d4f81c5a2144232da77c395fe7fb48&imgtype=0&src=http%3A%2F%2Fimg3.duitang.com%2Fuploads%2Fitem%2F201407%2F18%2F20140718163714_yKMXs.jpeg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.menu{
+    display: block;
+    position: relative;
+    margin-right: 2rem;
+    /*为了两个浮动到同一行的块元素垂直居中对齐，写死line-height*/
+    line-height: 127px;
+}
+.menu h2{
+    float: left;
+    margin-left: 3rem;
+    font-size: 3rem;
+    vertical-align: middle;
+    color:  rgba(254,209,54,1);
+}
+
+.menu h2 a{
+    color:  rgba(254,209,54,1);
+    
+}
+
+.menu ul{
+    float: right;
+    list-style: none;
+    vertical-align: middle;
+}
+
+.menu ul li{
+    float: left;
+}
+
+.menu ul li a{
+    display: inline-block;
+    padding: 0 5px;
+
+}
+.menu ul li a:hover{
+    color: rgb(254,209,54);
+}
+header .content{
+    position: absolute;
+    width: 100%;
+    height:130px;
+    top:0;
+    left:0;
+    bottom:0;
+    right: 0;
+    margin: auto;
+}
+
+header .content h2{
+    position: relative;
+    font-size: 3rem;
+    padding: 10px 0;
+}
+
+header .content h1{
+    position: relative;
+    font-size: 4rem;
+    padding: 10px 0 30px;
+}
+header .content .more{
+    display: inline-block;
+    font-size: 2rem;
+    padding: 5px;
+    background-color: rgba(254,209,54,0.6);
+    border-radius: 5px;
+}
+
+header .content .more:hover{
+    background-color:  rgba(254,209,54,1);
+}
+
+#services{
+    text-align: center;
+    position: relative;
+}
+
+#services .container{
+   margin-top: 8rem;
+}
+
+#services .container .row .title{
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 1.5rem 0;
+}
+
+#services .container .row:first-child .title{
+    padding-top: 4rem;
+    font-size: 4rem;
+}
+
+#services .container .row .detail{
+    font-size: 1.5rem;
+    color: rgb(141,119,141);
+    padding-bottom: 7rem;
+}
+
+#services .container .row .col{
+    float: left;
+    width: 33.3%;
+}
+
+#services .container .row img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+#guys{
+    background: rgb(247,247,247);
+}
+
+#guys .container{
+    margin-bottom: 5rem;
+}
+
+#guys .container .row{
+    margin: 0 5rem;
+    text-align: center;
+}
+
+#guys .container .row .col{
+    max-width: 400px;
+    float: left;
+    margin: 0 calc((100% - 75rem)/2) 0  0;
+    background-color: white;
+    position: relative;
+}
+
+
+#guys .container .row .col:last-child{
+    float: left;
+    margin: 0;
+}
+
+#guys .container .row .col img{
+     width: 25rem;
+     display: inline-block;
+ }
+
+#guys .container .row .col .pic{
+    display: block;
+    /*设置该属性后遮罩实现了只遮住图片的效果*/
+    position: relative;
+
+}
+
+#guys .container .row .col .pic:hover::before{
+    position: absolute;
+    /*html中unicode 16进制字符前要加&#x, css中前面加\, js中是加\u.*/
+    content:  "";
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(235,207,62,0.9);
+}
+
+#guys .container .row .col .pic:hover::after{
+    position: absolute;
+    font-family: iconfont;
+    font-size: 8rem;
+    font-weight: bold;
+    /*html中unicode 16进制字符前要加&#x, css中前面加\, js中是加\u.*/
+    content:  "\e6b9";
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+#guys .container .row .col .content{
+    margin: 2rem 0;
+}
+
+#guys .container .row .col .content .cn-name{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#guys .container .row .col .content .en-name{
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: rgb(119,119,119);
+}
+
+#about  .row{
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+#about  .container .row:nth-child(odd) img{
+    float: right;
+    display: inline-block;
+    border: 1rem rgb(241,241,241) solid;
+    border-radius: 50%;
+    width: 14rem;
+    height:14rem;
+    margin-right: calc(50% - 7rem);
+    box-sizing: border-box;
+}
+
+#about  .container .row:nth-child(odd) .aside{
+    float: right;
+    margin-right:2rem;
+    max-width: 400px;
+}
+
+#about .container .row:nth-child(even) img{
+    float: left;
+    display: inline-block;
+    border: 1rem rgb(241,241,241) solid;
+    border-radius: 50%;
+    width: 14rem;
+    height:14rem;
+    margin-left: calc(50% - 7rem);
+    box-sizing: border-box;
+}
+
+#about  .container .row:nth-child(even) .aside{
+    float: left;
+    margin-left:2rem;
+    max-width: 400px;
+}
+
+#about   .container .row:nth-child(odd) .aside h3.content{
+    text-align: right;
+}
+
+#about  .container .row:nth-child(even) .aside h3.content{
+    text-align: left;
+}
+
+#about .container{
+   position: relative;
+}
+
+
+#about .container::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: rgb(155,241,241);
+    width: 1px;
+    height: 100%;
+    left: 50%;
+}
+
+
+#team{
+    background: rgb(247,247,247);
+}
+
+#team ul{
+    list-style: none;
+}
+
+#team  li.col{
+    float: left;
+    width: 33.3%;
+}
+
+#team li img{
+    border: 1rem rgb(241,241,241) solid;
+    border-radius: 50%;
+    width:225px;
+    height:225px;
+}
+
+#team li h3.content{
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+#team .contact{
+   text-align: center;
+    padding-bottom: 10rem;
+}
+
+#team .contact ul{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#team .contact li{
+    float: left;
+    font-size: 1.5rem;
+    font-family: iconfont;
+    margin-left: 1rem;
+}
+#team .contact li:first-child{
+    margin-left: 0;
+}
+
+#team .contact li a{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 4rem;
+    height: 4rem;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#team .contact li a:hover{
+    background-color: orange;
+}
+
+#contact{
+    background-image: url(https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=952190812,2643289141&fm=26&gp=0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    color: white;
+}
+
+#contact::before{
+    content:"";
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#contact .main{
+    position: relative;
+}
+
+#contact .header{
+    position: relative;
+}
+
+
+#contact .main .left{
+    float: left;
+    width: 50%;
+    position: relative;
+    height: 100%;
+}
+
+#contact .main .right{
+    left:50%;
+    width: 50%;
+    position: absolute;
+    height: 100%;
+}
+
+#contact .main input{
+    padding: 2rem;
+    font-size: 2rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 75%;
+}
+
+#contact .main li{
+    margin: 2rem 0;
+}
+
+#contact .main .right li{
+    height: 100%;
+    padding: 2rem 0;
+    margin: 0;
+}
+
+#contact .main .right textarea{
+   width:80%;
+   border: 1px solid white;
+   border-radius: 5px;
+   height: calc(100% - 4rem);
+
+}
+
+#contact .foot{
+    position: relative;
+}
+
+#contact .foot a{
+    display: inline-block;
+    color:white;
+    font-size: 2rem;
+    padding: 2rem 4rem;
+    background-color: rgb(254,209,54);
+    border-radius: 5px;
+}
+
+#contact .foot a:hover{
+    background-color: rgb(254,197,3);
+}
+
+
+
+
+
+
+
