@@ -79,7 +79,8 @@
 ![]( http://ov4zbm8w2.bkt.clouddn.com/parseInt%E5%92%8CNumber%E8%BD%AC%E6%8D%A2obj%E7%9A%84%E5%B7%AE%E5%BC%822.png)
 
 
-**从上图可以得出重要结论二：1. Number将对象转换为数值类型时，先调用valueOf方法，如果该方法的返回值是null，undefined，boolean，string，number，则基于该返回值进行数值转换；2. 如果该方法返回的是对象，则需要调用toString方法，根据toString方法的返回值进行数值转换 **
+**从上图可以得出重要结论二：1. Number将对象转换为数值类型时，先调用valueOf方法，如果该方法的返回值是null，undefined，boolean，string，number，则基于该返回值进行数值转换；
+2. 如果该方法返回的是对象，则需要调用toString方法，根据toString方法的返回值进行数值转换**
 
 
 
