@@ -1,5 +1,5 @@
 [TOC]
-# 基本概念
+# 基本概念 
 ##  数据类型
 ###  基础知识
 > javascript共六种类型，如下表所示
@@ -47,11 +47,13 @@
 2.使用Number(),parseInt(),parseFloat()等方法强制转换
 ![]( http://ov4zbm8w2.bkt.clouddn.com/parseInt.png)
 3. Number(),parseInt(),parseFloat()三个方法的区别
+
 3.1 处理null有区别
 ![]( http://ov4zbm8w2.bkt.clouddn.com/parseInt%E5%92%8Cfloat%E5%8C%BA%E5%88%AB.png)
-3.2 处理空字符有区别
 
+3.2 处理空字符有区别
 ![]( http://ov4zbm8w2.bkt.clouddn.com/parseInt%E5%A4%84%E7%90%86%E7%A9%BA%E5%AD%97%E7%AC%A6%E4%B8%B2.png)
+
 3.3 parseInt可以指定按何种进制进行转换
 ![]( http://ov4zbm8w2.bkt.clouddn.com/parseInt%E6%8C%87%E5%AE%9A%E8%BF%9B%E5%88%B6.png)
 
