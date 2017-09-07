@@ -41,12 +41,14 @@
 
 
 
-> 二 转number类型
+> 二,转number类型
+
 1.使用  “+”  号隐式转换；
 
 ![](http://ov4zbm8w2.bkt.clouddn.com/%E6%95%B0%E5%AD%97%E9%9A%90%E5%BC%8F%E8%BD%AC%E6%8D%A2.png)
 
 2.使用Number(),parseInt(),parseFloat()等方法强制转换
+
 ![]( http://ov4zbm8w2.bkt.clouddn.com/parseInt.png)
 
 3. Number(),parseInt(),parseFloat()三个方法的区别
