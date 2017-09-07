@@ -43,18 +43,24 @@
 
 > 二 转number类型
 1.使用  “+”  号隐式转换；
+
 ![](http://ov4zbm8w2.bkt.clouddn.com/%E6%95%B0%E5%AD%97%E9%9A%90%E5%BC%8F%E8%BD%AC%E6%8D%A2.png)
+
 2.使用Number(),parseInt(),parseFloat()等方法强制转换
 ![]( http://ov4zbm8w2.bkt.clouddn.com/parseInt.png)
+
 3. Number(),parseInt(),parseFloat()三个方法的区别
 
 3.1 处理null有区别
+
 ![]( http://ov4zbm8w2.bkt.clouddn.com/parseInt%E5%92%8Cfloat%E5%8C%BA%E5%88%AB.png)
 
 3.2 处理空字符有区别
+
 ![]( http://ov4zbm8w2.bkt.clouddn.com/parseInt%E5%A4%84%E7%90%86%E7%A9%BA%E5%AD%97%E7%AC%A6%E4%B8%B2.png)
 
 3.3 parseInt可以指定按何种进制进行转换
+
 ![]( http://ov4zbm8w2.bkt.clouddn.com/parseInt%E6%8C%87%E5%AE%9A%E8%BF%9B%E5%88%B6.png)
 
 
@@ -63,6 +69,7 @@
 ###  Object类型转换为number类型
 
 >  ** 将对象转换为number类型的逻辑稍微复杂**，在转换的过程中会调用到对象的valueOf和toString方法。
+
 ![]( http://ov4zbm8w2.bkt.clouddn.com/parseInt%E5%92%8CNumber%E8%BD%AC%E6%8D%A2obj%E7%9A%84%E5%B7%AE%E5%BC%82.png)
 
 
