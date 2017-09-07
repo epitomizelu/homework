@@ -62,11 +62,11 @@
 
 ###  Object类型转换为number类型
 
->  **将对象转换为number类型的逻辑稍微复杂**，在转换的过程中会调用到对象的valueOf和toString方法。
+>  ** 将对象转换为number类型的逻辑稍微复杂**，在转换的过程中会调用到对象的valueOf和toString方法。
 ![]( http://ov4zbm8w2.bkt.clouddn.com/parseInt%E5%92%8CNumber%E8%BD%AC%E6%8D%A2obj%E7%9A%84%E5%B7%AE%E5%BC%82.png)
 
 
-**从上图可以得出重要结论一：1.  parseInt将对象转换为number时，直接调用toString方法，基于该方法的返回值进行转换；2. Number将对象转换为数值类型时，先调用valueOf方法，然后根据该方法返回值判断是否需要调用toString方法（见下图） **
+** 从上图可以得出重要结论一：1.  parseInt将对象转换为number时，直接调用toString方法，基于该方法的返回值进行转换；2. Number将对象转换为数值类型时，先调用valueOf方法，然后根据该方法返回值判断是否需要调用toString方法（见下图) **
 
 
 ![]( http://ov4zbm8w2.bkt.clouddn.com/parseInt%E5%92%8CNumber%E8%BD%AC%E6%8D%A2obj%E7%9A%84%E5%B7%AE%E5%BC%822.png)
